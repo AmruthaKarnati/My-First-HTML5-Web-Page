@@ -18,5 +18,5 @@ Simple webpage titled "My First Web Page" showcasing **pure HTML5** learning: pe
 **Karnati Leela Amrutha**
 
 - GitHub: AmruthaKarnati
-- Live Demo: https://AmruthaKarnati.github.io/My-First-HTML5-Web-Page
-
+- Live Demo: [https://AmruthaKarnati.github.io/My-First-HTML5-Web-Page
+](https://github.com/AmruthaKarnati/My-First-HTML5-Web-Page)
