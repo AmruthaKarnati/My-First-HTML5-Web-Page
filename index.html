@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Karnati Leela Amrutha">
+    <meta name="description" content="This contains all the things I am learning in HTML.">
+    <title>My First Web Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome, I'm Amrutha</h1>
+        <nav>
+            <ol>
+                <li>
+                    <a href="#html">About me</a>
+                </li>
+                <li>
+                    <a href="#html">Learning html</a>
+                </li>
+                <li>
+                    <a href="#table">Example of Table</a>
+                </li>
+                <li>
+                    <a href="#places">Vacation Places(example for images)</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <br>
+    <hr>
+
+    <main>
+        <article id="about">
+            <h2>About Me</h2>
+            <ul>
+                <li>
+                    Hi there! I'm Karnati Leela Amrutha. You can call me Amrutha.
+                </li>
+                <li>
+                    I'm a second-year Computer Science Engineering student at VIT-AP currently majoring in Artificial
+                    Intelligence and Machine Learning, which basically means I'm teaching computers to think… while
+                    still trying to figure out how to think like one myself.
+                </li>
+                <li>
+                    My dream is to do something that make both
+                    my brain and heart happy.
+                </li>
+                <li>
+                    I'm passionate about building things that make life simpler, smarter, and
+                    maybe even a bit prettier... even if I'm still figuring out CSS.
+                </li>
+            </ul>
+        </article>
+
+        <br>
+        <hr>
+
+        <article id="html">
+            <h2>My First Page using HTML</h2>
+            <section>
+                <h3>HTML5</h3>
+                <img src="html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+                <figure>
+                    <figcaption>Example of HTML5 code</figcaption>
+                    <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                </figure>
+            </section>
+        </article>
+
+        <br>
+        <hr>
+
+        <article id="table">
+            <h2>Example of Table</h2>
+            <table>
+                <caption>Daily Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td>
+                            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                        </td>
+                        <td>Write Code</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Break</th>
+                        <td>
+                            <time datetime="12:00">12pm</time>
+                        </td>
+                        <td>Eat Lunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Afternoon</th>
+                        <td>
+                            <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                        </td>
+                        <td>Study for Other Courses</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Evening</th>
+                        <td rowspan="2">All Other Time</td>
+                        <td>Free Time</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Night</th>
+                        <td>Sleep</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            That's what I do everyday. Just eat, sleep and code.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <br>
+        <hr>
+
+        <article id="places">
+            <h2>Planning for a vacation?</h2>
+            <section>
+                <h3>Places to visit</h3>
+                <ul>
+                    <li>
+                        <p>I've heard Caribbrean is good.</p>
+                        <figure>
+                            <img src="caribbean.jpg" alt="Caribbean Beach" title="Do you want do visit Caribbean Beach"
+                                width="400" height="250" loading="eager">
+                            <figcaption>Caribbean Beach figure</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I've heard good things about going here:</p>
+                        <address>
+                            Margaritaville Island Reserve Riviera Cancún<br>
+                            Bahia Petempich Puerto Morelos, Mexico<br>
+                            Colonia Morelos, México 77580
+                        </address>
+                        <figure>
+                            <img src="vacation.jpg" alt="cancum Vacation" title="It looks good here" width="400"
+                                height="250" loading="lazy">
+                            <figcaption>Cancum Vacation on Margaritaville Island</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Places to Avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I heard this is <strong>cold</strong>.</dd>
+
+                    <dt>South Pole</dt>
+                    <dd>This is also cold!</dd>
+                </dl>
+            </section>
+        </article>
+
+        <br>
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd like to hear from you!</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="eg.,Dustin" autocomplete="on"
+                            required>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input id="lastName" type="text" name="lastName" placeholder="eg.,Henderson" autocapitalize="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="xxxxxxxxxx" pattern="[0-9]{10}">
+                    </p>
+                    <p>
+                        <label for="year">Favorite Year from past decade:</label>
+                        <input id="year" type="number" min="2015" max="2025" step="1" value="2018">
+                    </p>
+                    <p>
+                        <label for="food">Favorite food:</label>
+                        <select name="food" id="food" multiple size="7">
+                            <optgroup label="Snacks">
+                                <option value="chips">Chips</option>
+                                <option value="pizza">Pizza</option>
+                                <option value="hamburger">Hamburger</option>
+                                <option value="ramen">Ramen</option>
+                            </optgroup>
+                            <optgroup label="Beverages">
+                                <option value="coffee">Coffee</option>
+                                <option value="tea">Tea</option>
+                                <option value="thickshake" selected>Thickshake</option>
+                                <option value="milkshake">Milkshake</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="pets" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Do you have any Hobby?</legend>
+                    <p>
+                        <input type="radio" name="hobby" id="art" value="art">
+                        <label for="art">Art</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="hobby" id="music" value="music">
+                        <label for="music">Music</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="hobby" id="read" value="read">
+                        <label for="read">Reading</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="hobby" id="others" value="others">
+                        <label for="others">Other</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Send a Note</legend>
+                    <label for="message">Enter your Message:</label>
+                    <br>
+                    <textarea name="messgae" id="message" cols="30" rows="5"
+                        placeholder="Type your messgae here"></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit"> Submit </button>
+                <button type="reset"> Reset </button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p> <!-- click on K.L.Amrutha on web page to know more -->
+            ------- &copy; <a href="about.html" target="_blanck">K.L.Amrutha</a> -------
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+</body>
+
+</html>
